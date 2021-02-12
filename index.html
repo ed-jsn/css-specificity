@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <link href="style.css" rel="stylesheet" type="text/css">
+<body>
+  <h1>Basic CSS Specificity</h1>
+    <h2>Linking to HTML</h2>
+      <p>CSS can be written directly into a HTML document by writing inside style tags.
+          However, it is preffered to use a separate .css file and link them in HTML using the link tag. 
+          A common link tag looks like the following:</p>
+          <span class="code">&lt;link href="style.css" rel="stylesheet" type="text/css"&gt;</span>
+    <h2>Selectors</h2>
+      <p>Selectors are resusable rulesets that operate CSS onto elements that fit their defined specificity.
+          using body as the selector will effect all elements inside the body of the HTL document - unless they 
+          have more specific declarations. Specifity always takes priority in styling a document.
+      </p>
+      <h2>Classes</h2>
+      <p>Classes are used to name certain elements in HTML and effect them specifically with CSS. For instance,
+        A h2 heading would be styled by a h2 declaration in HTML unless it had a specified class, which would override 
+        any prior, wider, h2 settings. Classes are denoted by a . in CSS and are called in HTML in the opening tags of 
+        an element.</p>
+    <h2>Grouping Selectors</h2>
+      <p>Selectors can be grouped in CSS using a comma, which will mean all grouped elements will be effected by the declaration
+          unless they are given further specificity. Classes can be grouped with basic selectors.
+      </p>
+    <h2>Chaining Selectors</h2>
+      <p>Similar to grouping selectors, selectors can be chained so that only certain combinations
+          of classes and elements can be affected. For Instance, a h3 heading with a class of 'section-heading' (written in CSS as
+          h3.section-heading {} ) can be affected specifically without affecting either the h2 element or the 'section-heading' 
+          class overall.
+      </p>
+    <h2>ID Tags</h2>
+      <p>ID tags are similar to classes except have further specifity. They are unique and each ID should only be used in one place
+          in HTML at a time. They have higher specifity than classes and so will always take precedent over them. they are denoted 
+          in CSS by a Hashtag in the declaration and are called in HTML with an ID="" in the opening tags of an element.
+      </p>
+    <h2>!important</h2>
+      <p>With the heighest specifity overall, the !important rule is used in special circumstances to demand control over the style of an
+          element. It should generally be avoided due to its power.
+      </p>
+  <footer> ~ Written By Ed Jackson, 2021. ~</footer>
+</body>
+</html>

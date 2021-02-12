@@ -1,0 +1,18 @@
+body {
+    font-family: "Helvetica";
+    text-align: center;
+    background-color: darkblue;
+    color: antiquewhite;
+}
+h1 {
+    font-weight: bold;
+}
+h2 {
+
+}
+footer {
+    font-style: italic;
+}
+.code {
+    font-family: monospace;
+}
